@@ -1,0 +1,22 @@
+pipeline {
+  agent any
+  stages{
+       stage('Init'){ 
+            steps{
+                echo 'Hi, This is Suresh Kumar from W3Logics.com'
+                echo 'Working as a Affiliate Marketing Manager'
+                echo '17+ Years of Exp in IT Field..'
+            }
+       }
+       stage('Build'){ 
+            steps{
+                echo 'Building Sample Maven Projects'
+            }
+       }
+       stage('Deploy'){
+             steps{
+                echo 'Deploying in Staging Arear'    
+             }
+       }
+  }
+}
