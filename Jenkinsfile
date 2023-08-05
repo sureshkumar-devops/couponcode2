@@ -10,7 +10,7 @@ stages{
   }
   stage('deploy to Staging Env'){
     steps{
-        Build job: 'Deploy_Application_Staging_Env1
+        build job:'Deploy_Application_Staging_Env1'
     }    
   }  
 }
