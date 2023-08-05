@@ -13,5 +13,16 @@ stages{
         build job:'Deploy_Application_Staging_Env1'
     }    
   }  
+
+   stage('deploy to Prod Env'){
+    steps{
+        timeout(time:5 ,units:DAYS)
+        { 
+          input message:'Approve Producation Deployment?'
+        }
+        build job:'Deploy_Application_Prod_Env'
+    }    
+  }  
+  
 }
 }
