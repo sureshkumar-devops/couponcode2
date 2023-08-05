@@ -16,7 +16,7 @@ stages{
 
    stage('deploy to Prod Env'){
     steps{
-        timeout(time:5 ,units:DAYS)
+        timeout(time:5, unit:'DAYS')
         { 
           input message:'Approve Producation Deployment?'
         }
